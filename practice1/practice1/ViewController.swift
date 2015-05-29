@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("勉強会成果発表用のアプリ")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
