@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48241463-EA0D-4CDF-B39E-F26742EE6390</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72DDB3EC220121F8E0C9A5C73D678A27A5E73DFE</key>
+		<string>https://github.com/FUNPBL2015/kan_practice1.git</string>
+		<key>E42A3E085BDC338DEC91A2DCCA9B6D16D780409B</key>
+		<string>https://github.com/FUNPBL2015/kan_practice1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>practice1/practice1.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72DDB3EC220121F8E0C9A5C73D678A27A5E73DFE</key>
+		<string>../../..</string>
+		<key>E42A3E085BDC338DEC91A2DCCA9B6D16D780409B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FUNPBL2015/kan_practice1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>72DDB3EC220121F8E0C9A5C73D678A27A5E73DFE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E42A3E085BDC338DEC91A2DCCA9B6D16D780409B</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72DDB3EC220121F8E0C9A5C73D678A27A5E73DFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kan_practice1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
