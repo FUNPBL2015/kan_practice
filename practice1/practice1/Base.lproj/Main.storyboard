@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xa4-3Z-mgv" kind="show" id="7ij-wq-t8o"/>
+                                    <segue destination="S0u-fi-an4" kind="show" id="OLg-2j-QP4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R=0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK2-3r-9um">
@@ -84,24 +84,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="GTL-KA-3Cj">
+        <!--Imageview-->
+        <scene sceneID="Hd5-7H-KwL">
             <objects>
-                <viewController id="Xa4-3Z-mgv" sceneMemberID="viewController">
+                <viewController id="S0u-fi-an4" customClass="imageview" customModule="practice1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ymV-qh-nha"/>
-                        <viewControllerLayoutGuide type="bottom" id="Key-ox-dOA"/>
+                        <viewControllerLayoutGuide type="top" id="hMl-b6-aop"/>
+                        <viewControllerLayoutGuide type="bottom" id="t36-M3-p9o"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OB9-2F-AO1">
+                    <view key="view" contentMode="scaleToFill" id="6No-EZ-add">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxE-d6-rAh">
+                                <rect key="frame" x="51" y="42" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="YIR-yj-GYX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-XU-icl">
+                                <rect key="frame" x="41" y="199" width="292" height="302"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="UIimageview" destination="H0o-XU-icl" id="w15-eI-6q7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fck-3X-dWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKh-kC-jAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859.5" y="283.5"/>
+            <point key="canvasLocation" x="681.5" y="356.5"/>
         </scene>
     </scenes>
 </document>
