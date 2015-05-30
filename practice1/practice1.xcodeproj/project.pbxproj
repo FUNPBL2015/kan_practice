@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3701A7121B19C40600C702AE /* imageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A7111B19C40600C702AE /* imageview.swift */; };
+		3701A7141B19C5E500C702AE /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A7131B19C5E500C702AE /* TextfieldView.swift */; };
 		372310A11B1824640001CCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310A01B1824640001CCB6 /* AppDelegate.swift */; };
 		372310A31B1824640001CCB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310A21B1824640001CCB6 /* ViewController.swift */; };
 		372310A61B1824640001CCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372310A41B1824640001CCB6 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3701A7111B19C40600C702AE /* imageview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageview.swift; sourceTree = "<group>"; };
+		3701A7131B19C5E500C702AE /* TextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 		3723109B1B1824640001CCB6 /* practice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3723109F1B1824640001CCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372310A01B1824640001CCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				372310A01B1824640001CCB6 /* AppDelegate.swift */,
 				372310A21B1824640001CCB6 /* ViewController.swift */,
+				3701A7131B19C5E500C702AE /* TextfieldView.swift */,
 				3701A7111B19C40600C702AE /* imageview.swift */,
 				372310A41B1824640001CCB6 /* Main.storyboard */,
 				372310A71B1824640001CCB6 /* Images.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				372310A31B1824640001CCB6 /* ViewController.swift in Sources */,
 				3701A7121B19C40600C702AE /* imageview.swift in Sources */,
+				3701A7141B19C5E500C702AE /* TextfieldView.swift in Sources */,
 				372310A11B1824640001CCB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
