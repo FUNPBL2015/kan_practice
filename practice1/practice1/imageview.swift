@@ -10,12 +10,14 @@ import UIKit
 
 class imageview: UIViewController {
 
-    //画像を表示するためのアウトレット宣言
-    @IBOutlet weak var UIimageview: UIImageView!
-    
+
+    @IBOutlet weak var img_view: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let myImage: UIImage = UIImage(named: "kiko.gif")!
+        // 画面に画像を設定する
+        img_view.image = myImage
     }
     
     override func didReceiveMemoryWarning() {
