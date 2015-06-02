@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ColorLabel.backgroundColor = UIColor(red: 0.5,green: 0.5,blue: 0.5,alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,12 +38,27 @@ class ViewController: UIViewController {
 
 
     @IBAction func SliderRchanged(sender: UISlider) {
+        RedLabel.text = "R = \(RedSlider.value)"
+        
+        ColorLabel.backgroundColor = UIColor(red: CGFloat(RedSlider.value),
+            
+            green: CGFloat(GreenSlider.value),blue: CGFloat(BlueSlider.value),alpha: 1.0)
     }
     
     @IBAction func SliderGchanged(sender: UISlider) {
+        GreenLabel.text = "G = \(GreenSlider.value)"
+        
+        ColorLabel.backgroundColor = UIColor(red: CGFloat(RedSlider.value),
+            
+            green: CGFloat(GreenSlider.value),blue: CGFloat(BlueSlider.value),alpha: 1.0)
     }
     
     @IBAction func SliderBchanged(sender: UISlider) {
+        ColorLabel.backgroundColor = UIColor(red: CGFloat(RedSlider.value),
+            
+            green: CGFloat(GreenSlider.value),blue: CGFloat(BlueSlider.value),alpha: 1.0)
+        
+        BlueLabel.text = "B = \(BlueSlider.value)"
     }
 }
 
