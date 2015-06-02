@@ -25,7 +25,7 @@ class TextfieldView: UIViewController {
 
     //ボタンを押すと入力したテキストをラベルに表示する
     @IBAction func viewButton(sender: UIButton) {
-        
+        TextLabel.text = InputTextfield.text
     }
     
 }

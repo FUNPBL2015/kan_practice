@@ -25,6 +25,10 @@ class omikuji: UIViewController {
 
     //おみくじがスタートするボタン
     @IBAction func OmikujiStartButton(sender: UIButton) {
-        
+        var alert = UIAlertView()
+        alert.title = "運勢は..."
+        alert.message = omikuji[Int(arc4random()%7)]
+        alert.addButtonWithTitle("OK")
+        alert.show()
     }
 }
