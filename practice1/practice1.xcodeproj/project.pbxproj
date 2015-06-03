@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3701A7121B19C40600C702AE /* imageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A7111B19C40600C702AE /* imageview.swift */; };
+		3701A7141B19C5E500C702AE /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A7131B19C5E500C702AE /* TextfieldView.swift */; };
+		3701A7161B19C7FE00C702AE /* omikuji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A7151B19C7FE00C702AE /* omikuji.swift */; };
 		372310A11B1824640001CCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310A01B1824640001CCB6 /* AppDelegate.swift */; };
 		372310A31B1824640001CCB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310A21B1824640001CCB6 /* ViewController.swift */; };
 		372310A61B1824640001CCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372310A41B1824640001CCB6 /* Main.storyboard */; };
 		372310A81B1824640001CCB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372310A71B1824640001CCB6 /* Images.xcassets */; };
 		372310AB1B1824640001CCB6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372310A91B1824640001CCB6 /* LaunchScreen.xib */; };
 		372310B71B1824640001CCB6 /* practice1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310B61B1824640001CCB6 /* practice1Tests.swift */; };
+		8F40A74D1B19E9FA00251D21 /* kiko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A74C1B19E9FA00251D21 /* kiko.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3701A7111B19C40600C702AE /* imageview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageview.swift; sourceTree = "<group>"; };
+		3701A7131B19C5E500C702AE /* TextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		3701A7151B19C7FE00C702AE /* omikuji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = omikuji.swift; sourceTree = "<group>"; };
 		3723109B1B1824640001CCB6 /* practice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3723109F1B1824640001CCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372310A01B1824640001CCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		372310B01B1824640001CCB6 /* practice1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practice1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		372310B51B1824640001CCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372310B61B1824640001CCB6 /* practice1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice1Tests.swift; sourceTree = "<group>"; };
+		8F40A74C1B19E9FA00251D21 /* kiko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kiko.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 			children = (
 				372310A01B1824640001CCB6 /* AppDelegate.swift */,
 				372310A21B1824640001CCB6 /* ViewController.swift */,
+				3701A7151B19C7FE00C702AE /* omikuji.swift */,
+				3701A7131B19C5E500C702AE /* TextfieldView.swift */,
+				3701A7111B19C40600C702AE /* imageview.swift */,
 				372310A41B1824640001CCB6 /* Main.storyboard */,
 				372310A71B1824640001CCB6 /* Images.xcassets */,
 				372310A91B1824640001CCB6 /* LaunchScreen.xib */,
@@ -90,6 +101,7 @@
 		3723109E1B1824640001CCB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F40A74C1B19E9FA00251D21 /* kiko.gif */,
 				3723109F1B1824640001CCB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +206,7 @@
 			files = (
 				372310A61B1824640001CCB6 /* Main.storyboard in Resources */,
 				372310AB1B1824640001CCB6 /* LaunchScreen.xib in Resources */,
+				8F40A74D1B19E9FA00251D21 /* kiko.gif in Resources */,
 				372310A81B1824640001CCB6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				372310A31B1824640001CCB6 /* ViewController.swift in Sources */,
+				3701A7161B19C7FE00C702AE /* omikuji.swift in Sources */,
+				3701A7121B19C40600C702AE /* imageview.swift in Sources */,
+				3701A7141B19C5E500C702AE /* TextfieldView.swift in Sources */,
 				372310A11B1824640001CCB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = practice1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = practice1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,6 +387,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = practice1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice1.app/practice1";
@@ -384,6 +403,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = practice1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice1.app/practice1";
@@ -409,6 +429,7 @@
 				372310BC1B1824640001CCB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		372310BD1B1824640001CCB6 /* Build configuration list for PBXNativeTarget "practice1Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +438,7 @@
 				372310BF1B1824640001CCB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

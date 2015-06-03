@@ -16,41 +16,226 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R=0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK2-3r-9um">
+                                <rect key="frame" x="25" y="174" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G=0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQD-Ou-hd1">
+                                <rect key="frame" x="24" y="284" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B=0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98n-kA-nlB">
+                                <rect key="frame" x="26" y="395" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="21D-Te-gw0">
+                                <rect key="frame" x="14" y="215" width="347" height="31"/>
+                                <connections>
+                                    <action selector="SliderRchanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="h58-Y9-otz"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-hB-3xM">
+                                <rect key="frame" x="14" y="326" width="347" height="31"/>
+                                <connections>
+                                    <action selector="SliderGchanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="O54-5a-0fu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1c5-JY-3z7">
+                                <rect key="frame" x="14" y="433" width="347" height="31"/>
+                                <connections>
+                                    <action selector="SliderBchanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Kxs-D1-LD5"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73L-uj-OO1">
+                                <rect key="frame" x="34" y="39" width="118" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoL-H1-JCW">
-                                <rect key="frame" x="260" y="49" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Next &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xa4-3Z-mgv" kind="show" id="7ij-wq-t8o"/>
+                                    <segue destination="S0u-fi-an4" kind="show" id="OLg-2j-QP4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BlueLabel" destination="98n-kA-nlB" id="46P-Xj-4jF"/>
+                        <outlet property="BlueSlider" destination="1c5-JY-3z7" id="YAg-Al-dMC"/>
+                        <outlet property="ColorLabel" destination="73L-uj-OO1" id="qDO-Mo-9OT"/>
+                        <outlet property="GreenLabel" destination="pQD-Ou-hd1" id="rm1-tZ-kob"/>
+                        <outlet property="GreenSlider" destination="PsJ-hB-3xM" id="8rG-qc-iOJ"/>
+                        <outlet property="RedLabel" destination="qK2-3r-9um" id="c54-sh-Vnv"/>
+                        <outlet property="RedSlider" destination="21D-Te-gw0" id="cNN-ct-6TL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="GTL-KA-3Cj">
+        <!--Imageview-->
+        <scene sceneID="Hd5-7H-KwL">
             <objects>
-                <viewController id="Xa4-3Z-mgv" sceneMemberID="viewController">
+                <viewController id="S0u-fi-an4" customClass="imageview" customModule="practice1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ymV-qh-nha"/>
-                        <viewControllerLayoutGuide type="bottom" id="Key-ox-dOA"/>
+                        <viewControllerLayoutGuide type="top" id="hMl-b6-aop"/>
+                        <viewControllerLayoutGuide type="bottom" id="t36-M3-p9o"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OB9-2F-AO1">
+                    <view key="view" contentMode="scaleToFill" id="6No-EZ-add">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-XU-icl">
+                                <rect key="frame" x="41" y="198" width="292" height="302"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIX-9B-Spo">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Next &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="akQ-zC-cuF" kind="show" id="5Q5-Sx-SzU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxE-d6-rAh">
+                                <rect key="frame" x="16" y="28" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="YIR-yj-GYX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="img_view" destination="H0o-XU-icl" id="2Xu-TS-KJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKh-kC-jAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681.5" y="356.5"/>
+        </scene>
+        <!--Textfield View-->
+        <scene sceneID="4Ve-p8-DLs">
+            <objects>
+                <viewController id="akQ-zC-cuF" customClass="TextfieldView" customModule="practice1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OLe-zq-Zrl"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUf-Ft-gNE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nB4-nP-xi3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aC-jv-4qY">
+                                <rect key="frame" x="16" y="28" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S0u-fi-an4" kind="show" id="ize-9P-62s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJg-AM-euq">
+                                <rect key="frame" x="91" y="100" width="193" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aN-em-Yha">
+                                <rect key="frame" x="23" y="355" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-Br-EAt">
+                                <rect key="frame" x="270" y="348" width="65" height="44"/>
+                                <state key="normal" title="表示">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewButton:" destination="akQ-zC-cuF" eventType="touchUpInside" id="bEP-QO-1KI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNa-33-aAz">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Next &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mP7-kA-5wD" kind="show" id="2DY-bw-Pfk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="InputTextfield" destination="5aN-em-Yha" id="4rb-JA-N2H"/>
+                        <outlet property="TextLabel" destination="NJg-AM-euq" id="EDV-pl-JI2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtS-0E-trB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.5" y="356.5"/>
+        </scene>
+        <!--Omikuji-->
+        <scene sceneID="hHa-15-73b">
+            <objects>
+                <viewController id="mP7-kA-5wD" customClass="omikuji" customModule="practice1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oee-PC-cHh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pY9-7X-5KX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="utM-BM-oLv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr6-P2-Usx">
+                                <rect key="frame" x="45" y="105" width="289" height="64"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <state key="normal" title="おみくじを開始する">
+                                    <color key="titleColor" red="1" green="0.19385754729999999" blue="0.12175638530000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OmikujiStartButton:" destination="mP7-kA-5wD" eventType="touchUpInside" id="ljq-wK-Y7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjH-GC-TUK">
+                                <rect key="frame" x="16" y="28" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="akQ-zC-cuF" kind="show" id="DLu-uc-qOL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fck-3X-dWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTJ-jD-4GC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859.5" y="283.5"/>
+            <point key="canvasLocation" x="1531.5" y="356.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DLu-uc-qOL"/>
+        <segue reference="ize-9P-62s"/>
+    </inferredMetricsTieBreakers>
 </document>
